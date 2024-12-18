@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: beige;">
+    <header class="drinkshead">
+        <h1>Cakes</h1>
+        <nav>
+            <a href="#cart">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <section id="drinks" class="drinks">
+        <div class="drinkitems">
+            <div class="ditem" data-id="5">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\menuCakes.jpg" alt="Chocolate Cake">
+                <h1>Chocolate Cake</h1>
+                <p>$4.00</p>
+                <button onclick="addToCart(5, 'Chocolate Cake', 4)">Add</button>
+            </div>
+            <div class="ditem" data-id="6">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\vCake.jpg" alt="Vanilla Cake">
+                <h1>Vanilla Cake</h1>
+                <p>$4.00</p>
+                <button onclick="addToCart(6, 'Vanilla Cake', 4)">Add</button>
+            </div>
+            <div class="ditem" data-id="7">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\3Cake.jpg" alt="Tres Leches Cake">
+                <h1>Tres Leches Cake</h1>
+                <p>$4.00</p>
+                <button onclick="addToCart(7, 'Tres Leches Cake', 4)">Add</button>
+            </div>
+            <div class="ditem" data-id="8">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\mCake.jpg" alt="Mocha Cake">
+                <h1>Mocha Cake</h1>
+                <p>$4.00</p>
+                <button onclick="addToCart(8, 'Mocha Cake', 4)">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <a href="RAVcheckout.html"><button>Go to Checkout</button></a>
+        <a href="RAVhome.html"><button>Home</button></a>
+    </section>
+
+    <script src="bakery.js"></script>
+</body>
+</html>

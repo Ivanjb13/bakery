@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donuts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: beige;">
+    <header class="drinkshead">
+        <h1>Donuts</h1>
+        <nav>
+            <a href="#cart">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <section id="drinks" class="drinks">
+        <div class="drinkitems">
+            <div class="ditem" data-id="17">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\chdonut.jpg" alt="Chocolate Donut">
+                <h1>Chocolate</h1>
+                <p>$0.50</p>
+                <button onclick="addToCart(17, 'Chocolate Donut', 0.5)">Add</button>
+            </div>
+            <div class="ditem" data-id="18">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\gldonut.jpg" alt="Glazed Donut">
+                <h1>Glazed</h1>
+                <p>$0.50</p>
+                <button onclick="addToCart(18, 'Glazed Donut', 0.5)">Add</button>
+            </div>
+            <div class="ditem" data-id="19">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\sdonut.jpg" alt="Sugar Donut">
+                <h1>Sugar</h1>
+                <p>$0.50</p>
+                <button onclick="addToCart(19, 'Sugar Donut', 0.5)">Add</button>
+            </div>
+            <div class="ditem" data-id="20">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\stdonut.jpg" alt="Strawberry Donut">
+                <h1>Strawberry</h1>
+                <p>$0.50</p>
+                <button onclick="addToCart(20, 'Strawberry Donut', 0.5)">Add</button>
+            </div>
+        </div>
+        <div class="drinkitems">
+            <div class="ditem" data-id="21">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\mdonut.jpg" alt="Maple Donut">
+                <h1>Maple</h1>
+                <p>$0.50</p>
+                <button onclick="addToCart(21, 'Maple Donut', 0.5)">Add</button>
+            </div>
+            <div class="ditem" data-id="22">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\chfilled.jpg" alt="Chocolate Filled">
+                <h1>Chocolate Filled </h1>
+                <p>$0.90</p>
+                <button onclick="addToCart(22, 'Chocolate Filled Donut', 0.90)">Add</button>
+            </div>
+            <div class="ditem" data-id="23">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\rfilled.jpg" alt="Raspberry Filled">
+                <h1>Raspberry Filled </h1>
+                <p>$0.90</p>
+                <button onclick="addToCart(23, 'Raspberry Filled Donut', 0.90)">Add</button>
+            </div>
+            <div class="ditem" data-id="24">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\lfilled.jpg" alt="Lemon Filled">
+                <h1>Lemon Filled </h1>
+                <p>$0.90</p>
+                <button onclick="addToCart(24, 'Lemon Filled Donut', 0.90)">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <a href="RAVcheckout.html"><button>Go to Checkout</button></a>
+        <a href="RAVhome.html"><button>Home</button></a>
+    </section>
+
+    <script src="bakery.js"></script>
+</body>
+</html>

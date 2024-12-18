@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: beige;">
+    <header class="drinkshead">
+        <h1>Cakes</h1>
+        <nav>
+            <a href="#cart">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <section id="drinks" class="drinks">
+        <div class="drinkitems">
+            <div class="ditem" data-id="9">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\conchas.jpg" alt="Concha">
+                <h1>Conchas</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(9, 'Concha', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="10">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\danishfill.jpg" alt="Danish Fill">
+                <h1>Relleno</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(10, 'Relleno', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="11">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\empanadas.jpg" alt="Empanadas">
+                <h1>Empanadas</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(11, 'Empanadas', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="12">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\cuernitos.jpg" alt="Cuernos">
+                <h1>Cuernitos</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(12, 'Cuernitos', 1)">Add</button>
+            </div>
+        </div>
+        <div class="drinkitems">
+            <div class="ditem" data-id="13">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\puerquito.jpg" alt="Puerqito">
+                <h1>Puerquito</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(13, 'Puerquito', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="14">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\oreja.jpg" alt="Oreha">
+                <h1>Oreja</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(14, 'Oreja', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="15">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\flor.jpg" alt="Flor de Queso">
+                <h1>Flor de Queso</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(15, 'Flor de Queso', 1)">Add</button>
+            </div>
+            <div class="ditem" data-id="16">
+                <img src="C:\Users\ivanb\OneDrive\Desktop\UOPX\Bakery\Images\galleta.jpg" alt="Galletas">
+                <h1>Galletas</h1>
+                <p>$1.00</p>
+                <button onclick="addToCart(16, 'Galleta', 1)">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <a href="RAVcheckout.html"><button>Go to Checkout</button></a>
+        <a href="RAVhome.html"><button>Home</button></a>
+    </section>
+
+    <script src="bakery.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.checkheader {
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(156, 148, 37);
+    color: white;
+}
+
+.drinkshead {
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+.drinkitems {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ditem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: beige;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mItem {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: beige;
+}
+
+.mItem:hover {
+    background-color: blue;
+}
+.mHeader {
+    background-color: beige;
+    border: 5px dotted black;
+    justify-content: center;
+}
